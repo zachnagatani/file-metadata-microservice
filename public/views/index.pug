@@ -8,8 +8,9 @@ html
         div.container
             div.row
                 div.col-md-6.col-md-offset-3
-                    form.text-center
+                    form(method="POST" action="/get-file-size" enctype="multipart/form-data").text-center#upload-form
                         div.form-group
                             label(for="file") Upload a file
                             input(type="file" name="file")#file
                         input(type="submit" value="Upload").btn.btn-default
+        script(src="scripts/main.js")
